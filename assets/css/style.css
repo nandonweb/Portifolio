@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+:root {
+  --cor1: #fff;
+}
+
+body {
+  background-color: grey;
+  margin: 0 auto;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  
+}
+
+.conteudo-principal {
+  width: 100%;
+  height: 100%;
+  background-color: #282828;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  word-spacing: 12px;
+  margin-left: 2.5%;
+}
+
+.header-texto {
+  display: flex;
+  align-items: center;
+}
+
+.header-texto a {
+  text-decoration-line: none;
+  color: var(--cor1);
+  padding-left: 5%;
+}
+
+.header-images {
+  margin-right: 2.3%;
+  margin-top: 1%;
+}
+
+.header-images img {
+  width: 60px;
+  height: 60px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--cor1);
+}
+
+#dev {
+  font-size: 35px;
+}
+
+#dev-descricao {
+  font-size: 20px;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+}
+
+/* HABILIDADES */
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #1d1d1d;
+  width: 100%;
+  height: 100%;
+  color: var(--cor1);
+  padding-bottom: 5%;
+}
+
+.habilidades h1 {
+  font-size: 40px;
+  padding-top: 1.5%;
+  margin-left: 2%;
+}
+
+.linguagens {
+  font-size: 22px;
+  margin-left: 2%;
+  padding-bottom: 3%;
+}
+
+.linguagens-imagens img {
+  width: 6%;
+  height: 6%;
+  padding-left: 1%;
+}
+
+/* TEXTO H1 */
+
+.texto-h1{
+  text-align: center;
+  font-size: 35px;
+  padding-bottom: 2%;
+}
+
+/* PROJETOS */
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+  width: 100%;
+  height: 100%;
+  color: var(--cor1);
+  padding-bottom: 5%;
+}
+
+.projetos-imagens {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.projetos-images img {
+  width: 100%;
+  height: auto;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d1d1d;
+  width: 100%;
+  height: 100%;
+  color: var(--cor1);
+  padding-bottom: 5%;
+}
+
+.servicos-info {
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.servicos-texto {
+  width: 25%;
+  height: 30%;
+  padding-bottom: 4%;
+}
+
+.servicos-texto h1{
+  font-size: 28px;
+  text-align: center;
+}
+
+/* CONTATO */
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #282828;
+  color: var(--cor1);
+  padding-bottom: 5%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-color: #313131;
+  padding: 1% 2%;
+}
+
+.footer img {
+  width: 73px;
+  height: 73px;
+  margin-left: 35px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 599px) {
+  .header {
+    word-spacing: 3px;
+  }
+  .header-images img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .header-texto p {
+    display: flex;
+    align-items: center;
+    padding-left: 2.5%;
+  }
+  
+  .apresentacao {
+    margin-left:  25px;
+    padding-top: 5%;
+    padding-bottom: 7%;
+  }
+  .foto img {
+    display: none;
+  }
+
+  .habilidades {
+    padding-left: 10px;
+  }
+  .linguagens-imagens {
+    padding-top: 2%;
+  }
+  .projetos {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .projetos-imagens {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 40%;
+    padding-bottom: 25px;
+  }
+  .projetos-imagens img {
+    padding-top: 12%;
+  }
+  .servicos {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5%;
+  }
+  
+  .servicos-info {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: auto;
+  }
+  
+  .servicos-texto {
+    width: 55%; 
+    padding-bottom: 4%;
+  }
+  .contato {
+   display: flex;
+   align-items: center;
+  }
+  .contato-form img {
+    width: 70%;
+    height: 70%;
+    margin-left: 65px;
+  }
+  .footer img {
+    width: 45px;
+    height: 45px;
+    margin-left: 35px;
+  }
+  
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1080px) {
+  .apresentacao {
+    margin-left:  20px;
+  }
+  .foto img {
+    width: 80%;
+    height: 100%;
+  }
+  .projetos {
+    background-color: #00bbfa!important;
+  }
+  .projetos-imagens img{
+    display: flex;
+    justify-content: space-evenly;
+    width: 27%;
+    height: auto;
+  }
+}
+
