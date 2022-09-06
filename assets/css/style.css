@@ -2,6 +2,7 @@
 
 :root {
   --cor1: #fff;
+  --cor2: #1D70D9;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
-  
+
 }
 
 .conteudo-principal {
@@ -109,10 +110,11 @@ body {
 
 /* TEXTO H1 */
 
-.texto-h1{
+.texto-h1 {
   text-align: center;
   font-size: 35px;
   padding-bottom: 2%;
+  color: white;
 }
 
 /* PROJETOS */
@@ -150,8 +152,8 @@ body {
 }
 
 .servicos-info {
- display: flex;
- justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .servicos-texto {
@@ -160,7 +162,7 @@ body {
   padding-bottom: 4%;
 }
 
-.servicos-texto h1{
+.servicos-texto h1 {
   font-size: 28px;
   text-align: center;
 }
@@ -178,6 +180,51 @@ body {
   padding-bottom: 5%;
 }
 
+.contato-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 32%;
+  height: 570px;
+  background-color: #fff;
+  color: black;
+}
+
+.contato-form input {
+  width: 84%;
+  height: 6%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5%;
+}
+
+.contato-form textarea {
+  width: 84%;
+  height: 30%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: 5%;
+
+}
+
+.contato-form button {
+  font-size: 17px;
+  padding: 12px 28px 12px 28px;
+  background-color: var(--cor2);
+  color: white;
+  margin-top: 6%;
+  border-radius: 10px;
+  border-color: var(--cor2);
+}
+
+.contato-form button:hover {
+  background-color: #0e5abd;
+}
+
+.enviado {
+  margin-top: 15px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -193,9 +240,22 @@ body {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 599px) {
+  .texto-h1 {
+    font-size: 30px;
+  }
+
+  #dev {
+    font-size: 28px;
+  }
+
+  #dev-descricao, .habilidades span{
+    font-size: 18px;
+  }
+
   .header {
     word-spacing: 3px;
   }
+
   .header-images img {
     width: 40px;
     height: 40px;
@@ -206,12 +266,13 @@ body {
     align-items: center;
     padding-left: 2.5%;
   }
-  
+
   .apresentacao {
-    margin-left:  25px;
+    margin-left: 25px;
     padding-top: 5%;
     padding-bottom: 7%;
   }
+
   .foto img {
     display: none;
   }
@@ -219,14 +280,21 @@ body {
   .habilidades {
     padding-left: 10px;
   }
+
+  .habilidades h1 {
+    font-size: 30px;
+  }
+
   .linguagens-imagens {
     padding-top: 2%;
   }
+
   .projetos {
     display: flex;
     align-items: center;
     padding-top: 10px;
   }
+
   .projetos-imagens {
     display: flex;
     flex-direction: column;
@@ -234,59 +302,78 @@ body {
     height: 40%;
     padding-bottom: 25px;
   }
+
   .projetos-imagens img {
     padding-top: 12%;
   }
+
   .servicos {
     display: flex;
     flex-direction: column;
     padding-bottom: 5%;
   }
-  
-  .servicos-info {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   width: auto;
+
+  .servicos span {
+    font-size: 15px;
   }
-  
+
+  .servicos-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+
+  .servicos-info h1 {
+    font-size: 20px;
+  }
+
   .servicos-texto {
-    width: 55%; 
+    width: 55%;
     padding-bottom: 4%;
   }
+
   .contato {
-   display: flex;
-   align-items: center;
+    display: flex;
+    align-items: center;
   }
-  .contato-form img {
+
+  .contato-form {
     width: 70%;
-    height: 70%;
-    margin-left: 65px;
+    height: 500px;
+    margin-bottom: 35px;
   }
+
+  .contato-form h1 {
+    font-size: 20px;
+  }
+
   .footer img {
     width: 45px;
     height: 45px;
     margin-left: 35px;
   }
-  
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1080px) {
   .apresentacao {
-    margin-left:  20px;
+    margin-left: 20px;
   }
+
   .foto img {
     width: 80%;
     height: 100%;
   }
+
   .projetos {
-    background-color: #00bbfa!important;
+    background-color: #00bbfa !important;
   }
-  .projetos-imagens img{
+
+  .projetos-imagens img {
     display: flex;
     justify-content: space-evenly;
     width: 27%;
     height: auto;
   }
 }
-

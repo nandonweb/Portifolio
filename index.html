@@ -20,8 +20,8 @@
                         <a href="#servicos_link">Serviços</a>
                     </div>
                     <div class="header-images">
-                    <a href="#"><img src="assets/images/linkedin.png" alt=""></a>
-                    <a href="#"><img src="assets/images/github.png" alt=""></a>
+                        <a href="#"><img src="assets/images/linkedin.png" alt=""></a>
+                        <a href="#"><img src="assets/images/github.png" alt=""></a>
                     </div>
                 </div>
                 <div class="conteudo">
@@ -93,13 +93,16 @@
             <div class="contato">
                 <h1 class="texto-h1">Contato</h1>
                 <div class="contato-form">
-                    <img src="assets/images/contato.jpg" alt="">
-                    <!-- <input type="text" placeholder="Nome">
-                 <input type="email" placeholder="Email">
-                 <input type="text" placeholder="Mensagem">
-                 <button onclick="desativado()">Enviar</button> -->
+                    <h1>Entrar em Contato</h1>
+                        <input type="text" id="nome" placeholder="Nome">
+                        <input type="email" id="email" placeholder="Email">
+                        <textarea placeholder="Mensagem"></textarea>
+                        <button onClick="contato_form(document.getElementById('email').value)">Enviar</button>
+                        <div class="enviado"></div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
         <script src="assets/js/script.js"></script>
     </section>
@@ -108,7 +111,7 @@
             <a href="https://www.facebook.com/"><img src="assets/images/facebook.png" alt=""></a>
             <a href="https://www.instagram.com/"><img src="assets/images/Instagram.png" alt=""></a>
             <a href="https://www.github.com/"><img src="assets/images/github.png" alt=""></a>
-           <a href="mailto:example@example.com"><img src="assets/images/email.png" alt=""></a>
+            <a href="mailto:email@example.com"><img src="assets/images/email.png" alt=""></a>
         </div>
     </footer>
 </body>
